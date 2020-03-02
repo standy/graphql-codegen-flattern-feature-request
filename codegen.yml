@@ -1,0 +1,16 @@
+overwrite: true
+schema: "https://swapi-graphql.netlify.com/.netlify/functions/index"
+documents: "src/**/*.graphql"
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+    config:
+      preResolveTypes: true
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
+hooks:
+  afterAllFileWrite:
+    - prettier --write

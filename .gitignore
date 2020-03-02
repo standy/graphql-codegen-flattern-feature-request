@@ -1,0 +1,30 @@
+tmp
+.env
+
+
+### Node template
+# Runtime data
+pids
+*.pid
+*.seed
+
+# node-waf configuration
+.lock-wscript
+
+# Node
+node_modules
+
+
+
+### JetBrains template
+*.iml
+
+## Directory-based project format:
+.idea/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+#
+*.orig
+site/.vscode/
