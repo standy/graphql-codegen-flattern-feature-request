@@ -1,0 +1,4 @@
+{
+  "name": "SWAPI GraphQL",
+  "schemaPath": "graphql.schema.json"
+}
