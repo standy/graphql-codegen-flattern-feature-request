@@ -1,0 +1,16 @@
+query FilmsWithFragment {
+  allFilms {
+    ...AllFilms
+  }
+}
+
+fragment AllFilms on FilmsConnection {
+  films {
+    ...Film
+  }
+}
+
+fragment Film on Film {
+  title
+  director
+}

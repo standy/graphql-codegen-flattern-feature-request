@@ -667,3 +667,21 @@ export type FilmsQuery = {
     >;
   }>;
 };
+
+export type FilmsWithFragmentQueryVariables = {};
+
+export type FilmsWithFragmentQuery = {
+  __typename?: "Root";
+  allFilms: Maybe<{ __typename?: "FilmsConnection" } & AllFilmsFragment>;
+};
+
+export type AllFilmsFragment = {
+  __typename?: "FilmsConnection";
+  films: Maybe<Array<Maybe<{ __typename?: "Film" } & FilmFragment>>>;
+};
+
+export type FilmFragment = {
+  __typename?: "Film";
+  title: Maybe<string>;
+  director: Maybe<string>;
+};
